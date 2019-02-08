@@ -8,8 +8,6 @@ function sumar()
     var suma;
     primerNro=document.getElementById("numeroUno").value;
     segundoNro=document.getElementById("numeroDos").value;
-    suma=parseInt(primerNro)+parseInt(segundoNro);
-    alert("la suma es "+suma)
-
+    suma=parseInt(primerNro) + parseInt(segundoNro);
+    alert("la suma es "+suma);
 }
-
