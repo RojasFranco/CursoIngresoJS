@@ -1,10 +1,9 @@
 
 function mostrar()
 {
-    var base, altura, superficie, perimetro;
-    base=prompt("Ingrese base del triangulo")
-    altura=prompt("Ingrese altura del triangulo")
-    superficie=parseInt(base)*parseInt(altura)/2
-    perimetro=base*3
-    alert("La superficie es: "+superficie+" y el perimetro es : "+perimetro)
+    var mascotaUno, mascotaDos,pesoMascotaUno,pesoMascotaDos,pesoTotal;
+    mascotaUno=document.getElementById("mascotaUno").value;
+    mascotaDos=document.getElementById("mascotaDos").value;
+    pesoTotal=parseInt(pesoMascotaUno)+parseInt(pesoMascotaDos);
+    alert("Tenes dos mascotas "+mascotaUno" y "+mascotaDos+", que pesan "+pesoMascotaUno+" y "+pesoMascotaUno+" kilos,la suma de los kilos es "+pesoTotal);
 }
