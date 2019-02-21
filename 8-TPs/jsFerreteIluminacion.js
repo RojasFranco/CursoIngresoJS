@@ -54,3 +54,11 @@ function CalcularPrecio ()
     }
     alert("Usted pago $"+recargo)
 }
+/* lo puedo hacer con switch--- switch(cantidad){
+    cantidad '5':
+        if (marca=='ArgentinaLuz'){
+            total=cant*precio*60/100
+        } else {
+            total=cant*precio*70/100
+        }
+}
