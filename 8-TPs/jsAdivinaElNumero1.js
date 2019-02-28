@@ -20,12 +20,20 @@ function comenzar()
 
 function verificar()
 {
-	do {
-    nroIngresado=document.getElementById("numero").value
-  } while (isNaN(nroIngresado));
+  nroIngresado=document.getElementById('numero').value
   nroIngresado=parseInt(nroIngresado);
-  while (nroIngresado!=numeroSecreto) {
+  if (nroIngresado!=numeroSecreto) {
     cantidadIntentos+=1;
-  }*/
-
+    alert(cantidadIntentos)
+    if (nroIngresado<numeroSecreto) {
+      alert('Falta para llegar al numero')
+      document.getElementById('intentos').value=cantidadIntentos
+    } else {
+      alert('Se paso del numero')
+      document.getElementById('intentos').value=cantidadIntentos
+    }
+} else {
+  alert('Usted es un ganador!!! y en solo ' + (cantidadIntentos+1) + ' intento/s');
+  document.getElementById('intentos').value=(cantidadIntentos+1)
+}
 }
