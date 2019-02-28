@@ -9,6 +9,7 @@ function mostrar()
     for (var i=2; i<numero; i+=1) {
         if (numero%i==0) {
             bandera=false
+            break;
         }
     }
     if (bandera) {
